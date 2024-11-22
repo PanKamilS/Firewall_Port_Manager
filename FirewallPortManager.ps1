@@ -1,6 +1,5 @@
-# Script to manage port blocking in Windows Firewall
+# Script to manage, blocking or unblocking ports in Windows Firewall by PanKamilS
 
-# Function to add a port block
 function Add-PortBlock {
     param (
         [string]$Ports
@@ -19,7 +18,6 @@ function Add-PortBlock {
     }
 }
 
-# Function to remove a port block
 function Remove-PortBlock {
     param (
         [string]$Ports
@@ -38,7 +36,6 @@ function Remove-PortBlock {
     }
 }
 
-# Main menu
 function Main-Menu {
     Write-Host "What would you like to do?" -ForegroundColor Cyan
     Write-Host "1. Add a port block"
@@ -67,6 +64,4 @@ function Main-Menu {
     # Return to the main menu
     Main-Menu
 }
-
-# Start the main menu
 Main-Menu
